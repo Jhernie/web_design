@@ -19,7 +19,7 @@
     <!-- Start of navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Latitude</a>
+        <a class="navbar-brand" href="index.html">Latitude Weather Analysis</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,10 +30,10 @@
                 Plots
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarPlots">
-                <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
-                <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
-                <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
+                <a class="dropdown-item" href="temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="wind.html">Wind Speed</a>
               </div>
             </li>
             <li class="nav-item">
@@ -49,10 +49,34 @@
     <!-- End of navbar -->
 
     <!-- Start of container -->
-    <div class="container">
-      <img src="assets/images/Fig1.png" alt="Your Name">
-          <!-- Start of Visualizations imageNav Area -->
-          <!-- End of the Visualizations imageNav Area -->
+    <div class="container-fluid">
+      <!-- Start of Visualizations imageNav Area -->
+      <!-- Left Content Box -->
+      <section class="row"> 
+        <div class="col-md-6">
+          <h3 class="title">Summary</h3>
+          <hr>
+          <img class="panel" src="assets/images/Fig1.png" alt="Temp Graph" style="float:left;width:675px;height:425px;padding-right:10px;display:block;">
+          <p>
+            This analysis reviews the weather patterns based on latitude.
+          </p>
+        </div> 
+      <!-- Right Content Box -->  
+        <div class="col-md-6">
+          <h3 class="title">Visualizations</h3>
+          <hr>
+          <div class="row">
+              <a href="temp.html" class="col-lg-6"><img class="panel" src="assets/images/Fig1.png" alt="Temp Graph" style="float:left;width:350px;height:225px;padding-right:10px;display:block;" class="w-100"></a>
+              <a href="humidity.html" class="col-lg-6"><img class="panel" src="assets/images/Fig2.png" alt="Humidity Graph" style="float:left;width:350px;height:225px;padding-right:10px;display:block;" class="w-100"></a>
+          </div> 
+          <div class="row">   
+              <a href="cloudiness.html" class="col-md-6"><img class="panel" src="assets/images/Fig3.png" alt="Cloudiness Graph" style="float:left;width:350px;height:225px;padding-right:10px;display:block;" class="w-100"></a>
+              <a href="wind.html" class="col-md-6"><img class="panel" src="assets/images/Fig4.png" alt="Wind Graph" style="float:left;width:350px;height:225px;padding-right:10px;display:block;" class="w-100"></a>
+          </div>  
+          </div>                 
+        </div>
+      </section>
+      <!-- End of the Visualizations imageNav Area -->
     </div>
     <!-- End of container -->
 
